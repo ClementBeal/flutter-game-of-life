@@ -1,16 +1,14 @@
-# game_of_life
+# Game of Life
 
-A new Flutter project.
+A simple but very efficient and powerful and wonderful **Conway's Game of Life** in **Flutter**.
 
-## Getting Started
+## Demo
 
-This project is a starting point for a Flutter application.
+[Demo](https://flutter-game-of-life.pages.dev/)
 
-A few resources to get you started if this is your first Flutter project:
+It's slower in the browser.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How does it work
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The simulation has a 1D-array containing booleans. The game loop is updating and rendering the scene every X ms. It applies the game rules for each cell.  
+Then, a `CustomPainter` draw all the alive cells.
